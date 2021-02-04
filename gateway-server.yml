@@ -15,7 +15,7 @@ spring:
     gateway:
       routes:
         - id: organization-service
-          url: lb://organziation-service
+          uri: lb://organziation-service
           predicates:
             - Path=/organization/**
           filters:
